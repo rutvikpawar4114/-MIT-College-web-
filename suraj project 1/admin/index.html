@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    
+    <style>
+        .nav {
+            background-color: black;
+            height: 50px;
+            width: 1500px;
+            position: fixed;
+            left: 205px;
+            top: 0;
+
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            
+        }
+       
+        .nav ul{
+            float: left;
+        }
+        .ele_right {
+           padding-left: 1150px; 
+           
+        }
+        .ele_right li a {
+           font-size: 20px;
+           color: white;
+           text-decoration: none;
+           
+        }
+        .ele_right li a:hover{
+            background-color: grey;
+        }
+
+        .ele_left li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+        .ele_left li a:hover{
+            background-color: grey;
+        }
+        .menu_link{
+            text-align: center;
+            padding-top: 10px;
+        }
+       .menu_link  a{
+           color: white;
+           font-size: 30px;
+           text-decoration: none;  
+       }
+       .menu_link  a:hover{
+        background-color: grey;
+       }
+       .side_link {
+         padding-top: 10px;
+         list-style: none;
+         display: inline-block;  
+       }
+       .side_link  li a{
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        margin-left: -20px;
+         }  
+      .side_link li{
+        padding-top: 50px;
+        padding-left: -20px;
+        
+      }
+      .side_link  li a:hover{
+        background-color: grey;
+        
+      }
+      table{
+          width: 1450px;
+          height: 700px;
+          margin-left: 200px;
+          margin-top: 80px;
+          border: 2px solid red;
+      }
+      #th_1{
+        width: 1100px;
+    }
+    #th_2{
+    
+        
+     }
+     .column{
+        width: 300px;
+        height:180px;
+        margin-top: -20px;
+        margin-left: 10px;
+     }
+     .row{
+        margin-top: 20px;
+        padding-top: -30px;
+     }
+     #c_1{
+        background-color: red;
+     }
+     #c_2{
+        background-color: rgb(227, 7, 227);
+     }
+     #c_3{
+        background-color: blue;
+     }
+     h4{
+        font-size: 40px;
+        color: white;
+        padding-top: 30px;
+        
+        
+
+     }
+      
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        
+        <div class="menu_link">
+            <a href="">Dashboard</a>
+        </div>    
+            <ul class="side_link" >
+                
+                <li><a href="add_faculty_name.html">Add Faculty Name</a></li>
+                <li><a href="add_notice.html">Add Notice</a></li>
+                <li><a href="add_student_name.html">Add Student Name</a></li>
+                <li><a href="change_time_table.html">Change time Table</a></li>
+                <li><a href="ise_timetable.html">ISE time Table</a></li>
+                <li><a href="signup.html">Hod signup</a></li>
+            </ul>
+        
+
+    </div>
+    <div class="nav">
+        <ul class="ele_left">
+            <li><a href="#">Admin: Shubham Gupta</a></li>
+        </ul>  
+        <ul class="ele_right">
+            <li><a href="#">Logout</a></li>
+        </ul>   
+    </div>
+
+    <table>
+        <th id="th_1">
+            <a href="add_faculty_name.html"></a><br>   
+
+        </th>
+        <th id="th_2">
+            <div class="row">
+                <div class="column" id="c_1">
+                 <h4>No of student <br>200</h4>
+                 
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="column" id="c_2">
+                    <h4>N0 of Faculty <br>10</h4>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="column" id="c_3">
+                    <h4>Notice</h4>
+                </div>
+            </div>
+        </th>
+    </table>
+    
+    
+    
+
+    
+</body>
+
+</html>
